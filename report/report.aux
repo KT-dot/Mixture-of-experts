@@ -1,0 +1,52 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Part 1: Mixture-of-Experts FFN variants}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Setup}{1}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}The five FFN variants and parameter matching}{1}{subsection.1.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Part 1 results on the test split. Parameters in millions. PPL is target-token perplexity over all 49,582 test pairs. BLEU is on the full test split; ``unseen'' excludes the 1,097 test triplets whose vi or ja source occurs verbatim in training. ``Min'' is training wall-clock time.\relax }}{2}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:p1}{{1}{2}{Part 1 results on the test split. Parameters in millions. PPL is target-token perplexity over all 49,582 test pairs. BLEU is on the full test split; ``unseen'' excludes the 1,097 test triplets whose vi or ja source occurs verbatim in training. ``Min'' is training wall-clock time.\relax }{table.caption.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Part 1. Left: test perplexity. Middle: full-test BLEU with bootstrap 95\% CI. Right: BLEU change against the dense model, per source language. The y-axes do not start at zero.\relax }}{2}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:p1}{{1}{2}{Part 1. Left: test perplexity. Middle: full-test BLEU with bootstrap 95\% CI. Right: BLEU change against the dense model, per source language. The y-axes do not start at zero.\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Results}{2}{subsection.1.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Expert selection rate (\%) per layer, source language and token region, on 1,000 test pairs (about 21k source and 20k English-prefix tokens, teacher forced). For top-2 models a column sums to 200\%. In M4, E0* is the shared expert (100\% by construction).\relax }}{3}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:routing}{{2}{3}{Expert selection rate (\%) per layer, source language and token region, on 1,000 test pairs (about 21k source and 20k English-prefix tokens, teacher forced). For top-2 models a column sums to 200\%. In M4, E0* is the shared expert (100\% by construction).\relax }{figure.caption.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Routing diagnostics. $H$ is the routing entropy normalised by $\ln (\#\text  {routed experts})$ (1 = uniform), shown for layer 1 and averaged over layers and languages. ``Max share'' is the largest fraction of all routed assignments taken by one expert in any layer (the maximum is 0.5 under top-2). ``Unused'' counts (layer, language, region) cells in which some expert is never selected.\relax }}{3}{table.caption.4}\protected@file@percent }
+\newlabel{tab:routing}{{2}{3}{Routing diagnostics. $H$ is the routing entropy normalised by $\ln (\#\text {routed experts})$ (1 = uniform), shown for layer 1 and averaged over layers and languages. ``Max share'' is the largest fraction of all routed assignments taken by one expert in any layer (the maximum is 0.5 under top-2). ``Unused'' counts (layer, language, region) cells in which some expert is never selected.\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Expert usage per language and distribution of labour}{3}{subsection.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Part 2: Optimizers written from scratch}{4}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Setup}{4}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Optimizers}{4}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Part 2. Validation loss (left) and test BLEU (middle) at every $0.1\times $ of the dataset; learning-rate sweep on the proxy budget (right, large hollow markers = selected LR).\relax }}{5}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:p2}{{3}{5}{Part 2. Validation loss (left) and test BLEU (middle) at every $0.1\times $ of the dataset; learning-rate sweep on the proxy budget (right, large hollow markers = selected LR).\relax }{figure.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Part 2 at half and full budget. Wall clock is optimisation time only (excluding evaluation). Peak memory includes evaluation. AMP skips are steps skipped by the FP16 gradient scaler.\relax }}{5}{table.caption.6}\protected@file@percent }
+\newlabel{tab:p2}{{3}{5}{Part 2 at half and full budget. Wall clock is optimisation time only (excluding evaluation). Peak memory includes evaluation. AMP skips are steps skipped by the FP16 gradient scaler.\relax }{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Learning-rate sweep (bonus)}{5}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Results}{5}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Part 3: Decoding strategies}{6}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Setup and implementation}{6}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Results}{6}{subsection.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Part 3 on 19,611 ROCStories test stories; sampled rows are means over 3 seeds ($\pm $ std; std $\le 0.0015$ elsewhere). Gen.\ PPL: model perplexity of its own output (human reference 24.71). Rep-3: repeated-trigram fraction. Len: mean tokens. Stop: fraction ending in EOS. Time: full-run decode seconds (batch 128 greedy/sampling, 32 beam).\relax }}{7}{table.caption.7}\protected@file@percent }
+\newlabel{tab:p3}{{4}{7}{Part 3 on 19,611 ROCStories test stories; sampled rows are means over 3 seeds ($\pm $ std; std $\le 0.0015$ elsewhere). Gen.\ PPL: model perplexity of its own output (human reference 24.71). Rep-3: repeated-trigram fraction. Len: mean tokens. Stop: fraction ending in EOS. Time: full-run decode seconds (batch 128 greedy/sampling, 32 beam).\relax }{table.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Each strategy's F1 against the reference (left) and diversity (distinct-2, right), plotted against the perplexity of its own outputs (log scale). The dashed line marks the human reference perplexity (24.71).\relax }}{7}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:p3}{{4}{7}{Each strategy's F1 against the reference (left) and diversity (distinct-2, right), plotted against the perplexity of its own outputs (log scale). The dashed line marks the human reference perplexity (24.71).\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Beam-search time and complexity}{7}{subsection.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Story 1 of the test split (verbatim, cut at ``\ldots  ''). Sampled outputs use seed 0.\relax }}{8}{table.caption.9}\protected@file@percent }
+\newlabel{tab:gen}{{5}{8}{Story 1 of the test split (verbatim, cut at ``\ldots ''). Sampled outputs use seed 0.\relax }{table.caption.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Beam timing on a fixed 256-story subset (CUDA-synchronised, after a warm-up). ``Rows'' is the number of sequences per forward call.\relax }}{8}{table.caption.10}\protected@file@percent }
+\newlabel{tab:timing}{{6}{8}{Beam timing on a fixed 256-story subset (CUDA-synchronised, after a warm-up). ``Rows'' is the number of sequences per forward call.\relax }{table.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{8}{section.4}\protected@file@percent }
+\gdef \@abspage@last{8}

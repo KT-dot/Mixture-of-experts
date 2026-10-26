@@ -1,0 +1,80 @@
+{
+  "cuda_determinism_limitation": "Some CUDA kernels or external libraries can remain nondeterministic across hardware, driver, and PyTorch versions.",
+  "data": {
+    "block_counts": {
+      "test": 8510,
+      "train": 153169,
+      "validation": 8523
+    },
+    "configured_revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+    "dataset_fingerprints": {
+      "test": "d5aa80bdf2b5a07f",
+      "train": "230eb7263ffdda24",
+      "validation": "6b5e347a2ffe70fa"
+    },
+    "inspected_schema": {
+      "train": {
+        "columns": [
+          "doc_id",
+          "text"
+        ],
+        "features": {
+          "doc_id": "Value('string')",
+          "text": "Value('string')"
+        },
+        "row_count": 66320,
+        "sample_python_types": {
+          "doc_id": "str",
+          "text": "str"
+        }
+      }
+    },
+    "prediction_tokens": {
+      "test": 2178560,
+      "train": 39211264,
+      "validation": 2181888
+    },
+    "resolved_revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+    "selected_id_field": "doc_id",
+    "selected_text_field": "text",
+    "source": "browndw/human-ai-parallel-corpus",
+    "split_method": "seeded_document_family",
+    "split_rows": {
+      "test": 3320,
+      "train": 59688,
+      "validation": 3312
+    },
+    "tokenizer_sha256": "25c091e5fec5fce7d9f280ab40b4fba1891eb8d0f40de9f109c0cc415dfb5dc9",
+    "unknown_token_counts": {
+      "test": 0,
+      "train": 0,
+      "validation": 0
+    }
+  },
+  "data_order_seed": 42,
+  "deterministic_algorithms_requested": true,
+  "device": "cuda",
+  "initial_state_sha256": "103462917ca66e5ae48aae1680d5df0a17be2e1fede6e4c922f26b8a7c351c01",
+  "model_configuration": {
+    "d_model": 512,
+    "dropout": 0.1,
+    "max_sequence_length": 256,
+    "mlp_hidden_size": 2048,
+    "n_heads": 8,
+    "n_layers": 6,
+    "tie_embeddings": true,
+    "vocab_size": 16000
+  },
+  "model_parameter_count": 27079680,
+  "optimizer_order": [
+    "adamw",
+    "nadamw",
+    "lion",
+    "muon",
+    "sophia"
+  ],
+  "seed": 42,
+  "synthetic": false,
+  "torch_version": "2.6.0+cu124",
+  "training_token_budget": 39211264
+}

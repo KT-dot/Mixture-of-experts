@@ -1,0 +1,11 @@
+.venv/
+.cache/
+.runs/
+__pycache__/
+.ipynb_checkpoints/
+*.pt
+*.safetensors
+*.log
+shared/data/
+model */full/
+model */smoke/

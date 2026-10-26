@@ -1,0 +1,59 @@
+experiment:
+  seed: 1234
+
+# Pretrained checkpoint, pinned to an immutable Hub commit. Inference runs in FP32.
+model:
+  name: EleutherAI/pythia-160m
+  revision: 50f5173d932e8e61f858120bcb800b97af589f46
+  dtype: float32
+  device: cuda
+
+# ROCStories: `prompt` is a story's first sentence, `continuation` its remaining four.
+# The model continues the prompt; generations are scored against the continuation.
+dataset:
+  name: hamishivi/ROCStories
+  revision: cd2b3893a6ee30afada293d5a8f877c3023530e1
+  split: test
+  prompt_field: prompt
+  reference_field: continuation
+  max_samples: null        # null = the whole test split
+  min_samples: 1000
+
+generation:
+  # References average ~42 Pythia tokens (p99 ~57), so 64 leaves room without letting
+  # any strategy ramble far beyond a story's length.
+  max_new_tokens: 64
+  # ban: a story is one paragraph, so newline tokens are disallowed for every strategy
+  # and only EOS or the cap ends a continuation. ("stop" would end at a newline, but
+  # Pythia's argmax after the prompt's final period is often a newline, which leaves
+  # most greedy/beam continuations empty.)
+  newline_policy: ban
+  batch_size: 128
+  beam_batch_size: 32
+  scoring_batch_size: 64
+
+# Deterministic strategies run once; sampling strategies run once per seed.
+strategies:
+  - {name: greedy, type: greedy}
+  - {name: beam_1, type: beam, beam_width: 1, length_penalty: 1.0}
+  - {name: beam_2, type: beam, beam_width: 2, length_penalty: 1.0}
+  - {name: beam_4, type: beam, beam_width: 4, length_penalty: 1.0}
+  - {name: top_k_5, type: sample, top_k: 5, temperature: 1.0, seeds: [0, 1, 2]}
+  - {name: top_k_20, type: sample, top_k: 20, temperature: 1.0, seeds: [0, 1, 2]}
+  - {name: top_k_50, type: sample, top_k: 50, temperature: 1.0, seeds: [0, 1, 2]}
+  - {name: top_p_0.5, type: sample, top_p: 0.5, temperature: 1.0, seeds: [0, 1, 2]}
+  - {name: top_p_0.9, type: sample, top_p: 0.9, temperature: 1.0, seeds: [0, 1, 2]}
+  - {name: top_p_0.95, type: sample, top_p: 0.95, temperature: 1.0, seeds: [0, 1, 2]}
+  # Untruncated ancestral sampling, the baseline that top-k/top-p modify.
+  - {name: pure_sampling, type: sample, temperature: 1.0, seeds: [0, 1, 2]}
+
+# Beam-width timing on the first `stories` test stories, decoded 1 prompt at a time and
+# `batch_sizes` prompts at a time. Widths 8 and 16 only extend the trend for the
+# complexity analysis; they are not scored strategies.
+timing:
+  stories: 256
+  batch_sizes: [1, 32]
+  widths: [1, 2, 4, 8, 16]
+
+output:
+  directory: outputs/part3

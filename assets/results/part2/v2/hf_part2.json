@@ -1,0 +1,32 @@
+[
+  {
+    "repo": "Devatri/anlp-assignment2-part2-adamw",
+    "url": "https://huggingface.co/Devatri/anlp-assignment2-part2-adamw",
+    "checkpoint_sha256": "5c59e78cfd0d1c4205d68a79ae2128636a6aa4a8bc0b6ba09f58265c4620b557",
+    "uploaded": true
+  },
+  {
+    "repo": "Devatri/anlp-assignment2-part2-nadamw",
+    "url": "https://huggingface.co/Devatri/anlp-assignment2-part2-nadamw",
+    "checkpoint_sha256": "373f87aeed3096598dae68c461307727b74804bf0c5eb44c8b7300742dc53187",
+    "uploaded": true
+  },
+  {
+    "repo": "Devatri/anlp-assignment2-part2-lion",
+    "url": "https://huggingface.co/Devatri/anlp-assignment2-part2-lion",
+    "checkpoint_sha256": "74d4cfa3423734035c29f6279c9050cc72cf676fbc24cac7c5286631a5188df5",
+    "uploaded": true
+  },
+  {
+    "repo": "Devatri/anlp-assignment2-part2-muon",
+    "url": "https://huggingface.co/Devatri/anlp-assignment2-part2-muon",
+    "checkpoint_sha256": "5e6f1e3a61b1b7f1b30268dd12d19737992e0816ccf5218f8575a70ae9534213",
+    "uploaded": true
+  },
+  {
+    "repo": "Devatri/anlp-assignment2-part2-sophia",
+    "url": "https://huggingface.co/Devatri/anlp-assignment2-part2-sophia",
+    "checkpoint_sha256": "31f7040984bd63e54a3e2e8c95ce104fbae04f46d6b4ec98a18a59fb961d40f0",
+    "uploaded": true
+  }
+]

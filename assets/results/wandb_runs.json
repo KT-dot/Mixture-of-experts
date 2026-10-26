@@ -1,0 +1,84 @@
+{
+  "project": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2",
+  "visibility": "public (USER_READ)",
+  "runs": [
+    {
+      "name": "part1-model1",
+      "group": "part1-moe",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/x1ztyntp"
+    },
+    {
+      "name": "part1-model2",
+      "group": "part1-moe",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/okx2swue"
+    },
+    {
+      "name": "part1-model3",
+      "group": "part1-moe",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/xre71oby"
+    },
+    {
+      "name": "part1-model4",
+      "group": "part1-moe",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/0kndlox0"
+    },
+    {
+      "name": "part1-model5",
+      "group": "part1-moe",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/myu88zoj"
+    },
+    {
+      "name": "part2-lion-lr0.0001-check",
+      "group": "part2-lion-lr-check",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/fjyq6fds"
+    },
+    {
+      "name": "part2-lion-lr0.0002-check",
+      "group": "part2-lion-lr-check",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/4i6pqoy2"
+    },
+    {
+      "name": "part2-lr-sweep",
+      "group": "part2-lr-sweep",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/gqjuu2if"
+    },
+    {
+      "name": "part2-adamw",
+      "group": "part2-optimizers",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/xvmoecx5"
+    },
+    {
+      "name": "part2-lion",
+      "group": "part2-optimizers",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/ov5p69w4"
+    },
+    {
+      "name": "part2-muon",
+      "group": "part2-optimizers",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/gswbpaey"
+    },
+    {
+      "name": "part2-nadamw",
+      "group": "part2-optimizers",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/mht5yajm"
+    },
+    {
+      "name": "part2-sophia",
+      "group": "part2-optimizers",
+      "state": "finished",
+      "url": "https://wandb.ai/kanhadivyansh123-iiit-hyderabad/anlp-assignment2/runs/hcg1zkx8"
+    }
+  ]
+}

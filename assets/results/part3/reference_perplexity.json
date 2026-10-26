@@ -1,0 +1,11 @@
+{
+  "fingerprint": "176691d0ea86e4ff",
+  "stories": 19611,
+  "reference_perplexity": 24.707809473857317,
+  "reference_tokens_total": 827077,
+  "reference_tokens_mean": 42.174136963948804,
+  "reference_tokens_p95": 56.0,
+  "reference_tokens_p99": 61.0,
+  "reference_tokens_max": 79,
+  "fraction_references_longer_than_max_new_tokens": 0.0016827290806180205
+}

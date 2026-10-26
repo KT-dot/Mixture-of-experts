@@ -1,0 +1,435 @@
+[
+  {
+    "name": "blocks.0.attention.qkv.weight",
+    "shape": [
+      1536,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.0.attention.out.weight",
+    "shape": [
+      512,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.0.mlp.up.weight",
+    "shape": [
+      2048,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.0.mlp.down.weight",
+    "shape": [
+      512,
+      2048
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.1.attention.qkv.weight",
+    "shape": [
+      1536,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.1.attention.out.weight",
+    "shape": [
+      512,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.1.mlp.up.weight",
+    "shape": [
+      2048,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.1.mlp.down.weight",
+    "shape": [
+      512,
+      2048
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.2.attention.qkv.weight",
+    "shape": [
+      1536,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.2.attention.out.weight",
+    "shape": [
+      512,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.2.mlp.up.weight",
+    "shape": [
+      2048,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.2.mlp.down.weight",
+    "shape": [
+      512,
+      2048
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.3.attention.qkv.weight",
+    "shape": [
+      1536,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.3.attention.out.weight",
+    "shape": [
+      512,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.3.mlp.up.weight",
+    "shape": [
+      2048,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.3.mlp.down.weight",
+    "shape": [
+      512,
+      2048
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.4.attention.qkv.weight",
+    "shape": [
+      1536,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.4.attention.out.weight",
+    "shape": [
+      512,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.4.mlp.up.weight",
+    "shape": [
+      2048,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.4.mlp.down.weight",
+    "shape": [
+      512,
+      2048
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.5.attention.qkv.weight",
+    "shape": [
+      1536,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.5.attention.out.weight",
+    "shape": [
+      512,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.5.mlp.up.weight",
+    "shape": [
+      2048,
+      512
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "blocks.5.mlp.down.weight",
+    "shape": [
+      512,
+      2048
+    ],
+    "route": "muon",
+    "group": 0
+  },
+  {
+    "name": "embedding.weight",
+    "shape": [
+      16000,
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.0.attention_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.0.attention_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.0.mlp_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.0.mlp_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.1.attention_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.1.attention_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.1.mlp_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.1.mlp_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.2.attention_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.2.attention_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.2.mlp_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.2.mlp_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.3.attention_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.3.attention_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.3.mlp_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.3.mlp_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.4.attention_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.4.attention_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.4.mlp_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.4.mlp_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.5.attention_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.5.attention_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.5.mlp_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "blocks.5.mlp_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "final_norm.weight",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  },
+  {
+    "name": "final_norm.bias",
+    "shape": [
+      512
+    ],
+    "route": "adamw_fallback",
+    "group": 1
+  }
+]

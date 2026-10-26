@@ -1,0 +1,555 @@
+{
+  "differing_stories_in_saved_gpu_runs": 89,
+  "stories_total": 19611,
+  "device": "cuda",
+  "dtype": "float32",
+  "matched_batching": {
+    "batches": 86,
+    "stories_compared": 2752,
+    "identical_token_sequences": 2744,
+    "batch32_greedy_text_equal_to_saved_beam1": 2744
+  },
+  "tie_margins": {
+    "stories_measured": 89,
+    "median_logprob_gap": 0.0003662109375,
+    "max_logprob_gap": 0.00177001953125,
+    "fraction_gap_below_1e-3": 0.9550561797752809,
+    "fraction_competitors_are_top2": 1.0
+  },
+  "per_story": [
+    {
+      "index": 72,
+      "divergence_token": 2,
+      "logprob_gap": 0.00054931640625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 283,
+      "divergence_token": 10,
+      "logprob_gap": 0.00030517578125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 294,
+      "divergence_token": 37,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 350,
+      "divergence_token": 13,
+      "logprob_gap": 0.00030517578125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 647,
+      "divergence_token": 10,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 713,
+      "divergence_token": 11,
+      "logprob_gap": 0.00042724609375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 955,
+      "divergence_token": 22,
+      "logprob_gap": 0.00054931640625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 1172,
+      "divergence_token": 12,
+      "logprob_gap": 0.0010986328125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 1286,
+      "divergence_token": 5,
+      "logprob_gap": 0.0006103515625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 1349,
+      "divergence_token": 4,
+      "logprob_gap": 0.0003662109375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 1559,
+      "divergence_token": 23,
+      "logprob_gap": 0.0008544921875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 1769,
+      "divergence_token": 2,
+      "logprob_gap": 0.00054931640625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 1851,
+      "divergence_token": 0,
+      "logprob_gap": 0.0008544921875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 2881,
+      "divergence_token": 18,
+      "logprob_gap": 0.0006103515625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 3147,
+      "divergence_token": 0,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 3208,
+      "divergence_token": 4,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 3275,
+      "divergence_token": 30,
+      "logprob_gap": 0.00054931640625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 3578,
+      "divergence_token": 1,
+      "logprob_gap": 0.0,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 3817,
+      "divergence_token": 25,
+      "logprob_gap": 0.00030517578125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 3972,
+      "divergence_token": 26,
+      "logprob_gap": 0.00067138671875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 3976,
+      "divergence_token": 9,
+      "logprob_gap": 0.00067138671875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 4258,
+      "divergence_token": 2,
+      "logprob_gap": 0.0001220703125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 4309,
+      "divergence_token": 1,
+      "logprob_gap": 0.00054931640625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 5042,
+      "divergence_token": 7,
+      "logprob_gap": 0.0003662109375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 5311,
+      "divergence_token": 2,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 5374,
+      "divergence_token": 8,
+      "logprob_gap": 0.00054931640625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 5380,
+      "divergence_token": 7,
+      "logprob_gap": 0.0,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 5414,
+      "divergence_token": 14,
+      "logprob_gap": 0.00030517578125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 5517,
+      "divergence_token": 5,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 5710,
+      "divergence_token": 5,
+      "logprob_gap": 6.103515625e-05,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 5788,
+      "divergence_token": 12,
+      "logprob_gap": 0.00054931640625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 6087,
+      "divergence_token": 42,
+      "logprob_gap": 0.00048828125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 6281,
+      "divergence_token": 2,
+      "logprob_gap": 6.103515625e-05,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 6356,
+      "divergence_token": 10,
+      "logprob_gap": 0.0003662109375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 6450,
+      "divergence_token": 26,
+      "logprob_gap": 0.00079345703125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 6576,
+      "divergence_token": 37,
+      "logprob_gap": 6.103515625e-05,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 6649,
+      "divergence_token": 0,
+      "logprob_gap": 0.0006103515625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 6801,
+      "divergence_token": 54,
+      "logprob_gap": 0.0003662109375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 6902,
+      "divergence_token": 21,
+      "logprob_gap": 0.0003662109375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 6978,
+      "divergence_token": 0,
+      "logprob_gap": 0.000244140625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 7071,
+      "divergence_token": 8,
+      "logprob_gap": 0.00030517578125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 7080,
+      "divergence_token": 9,
+      "logprob_gap": 0.0001220703125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 8045,
+      "divergence_token": 3,
+      "logprob_gap": 0.0003662109375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 8156,
+      "divergence_token": 2,
+      "logprob_gap": 0.00067138671875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 8214,
+      "divergence_token": 20,
+      "logprob_gap": 0.0,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 8787,
+      "divergence_token": 3,
+      "logprob_gap": 0.0,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 8940,
+      "divergence_token": 12,
+      "logprob_gap": 0.0006103515625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 9054,
+      "divergence_token": 12,
+      "logprob_gap": 0.0,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 9108,
+      "divergence_token": 17,
+      "logprob_gap": 0.00030517578125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 9307,
+      "divergence_token": 28,
+      "logprob_gap": 0.00042724609375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 9633,
+      "divergence_token": 4,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 9639,
+      "divergence_token": 6,
+      "logprob_gap": 0.0,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 9869,
+      "divergence_token": 16,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 10395,
+      "divergence_token": 4,
+      "logprob_gap": 0.000244140625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 10399,
+      "divergence_token": 1,
+      "logprob_gap": 0.000244140625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 10873,
+      "divergence_token": 21,
+      "logprob_gap": 0.00048828125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 11632,
+      "divergence_token": 3,
+      "logprob_gap": 0.000732421875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 11729,
+      "divergence_token": 26,
+      "logprob_gap": 0.00079345703125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 12683,
+      "divergence_token": 14,
+      "logprob_gap": 0.00030517578125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 13130,
+      "divergence_token": 2,
+      "logprob_gap": 0.0001220703125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 13684,
+      "divergence_token": 11,
+      "logprob_gap": 0.000244140625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 13797,
+      "divergence_token": 4,
+      "logprob_gap": 0.00042724609375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 13946,
+      "divergence_token": 0,
+      "logprob_gap": 0.0003662109375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 14025,
+      "divergence_token": 3,
+      "logprob_gap": 0.0,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 14225,
+      "divergence_token": 44,
+      "logprob_gap": 0.00177001953125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 14392,
+      "divergence_token": 11,
+      "logprob_gap": 0.0,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 14886,
+      "divergence_token": 10,
+      "logprob_gap": 0.00042724609375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 15117,
+      "divergence_token": 21,
+      "logprob_gap": 0.000244140625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 15159,
+      "divergence_token": 23,
+      "logprob_gap": 0.000732421875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 15281,
+      "divergence_token": 6,
+      "logprob_gap": 6.103515625e-05,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 15461,
+      "divergence_token": 15,
+      "logprob_gap": 0.0001220703125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 15651,
+      "divergence_token": 15,
+      "logprob_gap": 6.103515625e-05,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 16083,
+      "divergence_token": 8,
+      "logprob_gap": 0.00048828125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 16172,
+      "divergence_token": 36,
+      "logprob_gap": 0.00103759765625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 16478,
+      "divergence_token": 0,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 16775,
+      "divergence_token": 0,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 16859,
+      "divergence_token": 10,
+      "logprob_gap": 0.00054931640625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 17378,
+      "divergence_token": 4,
+      "logprob_gap": 0.00030517578125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 17447,
+      "divergence_token": 1,
+      "logprob_gap": 0.0008544921875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 17575,
+      "divergence_token": 41,
+      "logprob_gap": 0.00079345703125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 17709,
+      "divergence_token": 1,
+      "logprob_gap": 0.00048828125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 17736,
+      "divergence_token": 12,
+      "logprob_gap": 0.00054931640625,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 17871,
+      "divergence_token": 9,
+      "logprob_gap": 0.0,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 18126,
+      "divergence_token": 6,
+      "logprob_gap": 0.0003662109375,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 18194,
+      "divergence_token": 23,
+      "logprob_gap": 0.0001220703125,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 18622,
+      "divergence_token": 26,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 18747,
+      "divergence_token": 14,
+      "logprob_gap": 0.00018310546875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 18826,
+      "divergence_token": 2,
+      "logprob_gap": 0.00067138671875,
+      "both_tokens_top2": true
+    },
+    {
+      "index": 19583,
+      "divergence_token": 5,
+      "logprob_gap": 0.0010986328125,
+      "both_tokens_top2": true
+    }
+  ]
+}

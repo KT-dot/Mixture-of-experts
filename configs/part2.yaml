@@ -1,0 +1,123 @@
+experiment:
+  seed: 42
+  deterministic_algorithms: true
+  # adamw/nadamw/lion/muon cover the four required categories; sophia is the bonus.
+  optimizers: [adamw, nadamw, lion, muon, sophia]
+
+# Dense Model 1 architecture reused from Part 1. max_sequence_length is supplied
+# from training.sequence_length, and vocab_size comes from the trained tokenizer.
+model:
+  d_model: 512
+  n_heads: 8
+  n_layers: 6
+  mlp_hidden_size: 2048
+  dropout: 0.1
+  tie_embeddings: true
+
+tokenizer:
+  type: byte_level_bpe
+  vocab_size: 16000
+  min_frequency: 2
+  special_tokens: [<pad>, <bos>, <eos>, <unk>]
+
+dataset:
+  name: browndw/human-ai-parallel-corpus
+  revision: b514ff64988d9e322fd81c5d70d69a38e78491f5
+  text_field: null
+  id_field: null
+  cache_directory: outputs/part2/cache/huggingface
+  split:
+    # The current dataset has only an official train split. Split source-document
+    # families together so human and AI parallel versions cannot leak across sets.
+    ratios:
+      train: 0.90
+      validation: 0.05
+      test: 0.05
+
+training:
+  sequence_length: 256
+  batch_size: 32
+  number_of_workers: 0
+  # null means exactly one complete pass over all fixed-length training blocks.
+  token_budget: null
+  evaluation_fractions: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  warmup_fraction: 0.05
+  minimum_lr_ratio: 0.1
+  device: cuda
+  # ADA's RTX 2080 Ti nodes do not support native BF16; FP16 uses GradScaler.
+  precision: float16
+  save_checkpoints: true
+  # Only the end-of-pass weights are published; intermediate ones would not fit quota.
+  checkpoint_fractions: [1.0]
+
+evaluation:
+  batch_size: 32
+  max_validation_examples: null
+  prefix_fraction: 0.5
+  generation_tokens: 64
+  # null scores every block of the held-out test split at every checkpoint.
+  bleu_examples: null
+  generation_batch_size: 256
+  # generations.csv keeps every example at the final checkpoint and this many at
+  # earlier ones (BLEU itself always uses all of them).
+  saved_generations_per_checkpoint: 64
+
+# Hyperparameters are deliberately independent. They must be reviewed/tuned per
+# optimizer before the expensive controlled runs; none is copied automatically.
+optimizers:
+  adamw:
+    lr: 0.0006
+    betas: [0.9, 0.95]
+    eps: 1.0e-8
+    weight_decay: 0.1
+    max_grad_norm: 1.0
+  nadamw:
+    lr: 0.0006
+    betas: [0.9, 0.95]
+    eps: 1.0e-8
+    weight_decay: 0.1
+    max_grad_norm: 1.0
+  lion:
+    lr: 0.0001
+    betas: [0.9, 0.99]
+    weight_decay: 0.3
+    max_grad_norm: 1.0
+  muon:
+    lr: 0.02
+    momentum: 0.95
+    weight_decay: 0.1
+    ns_steps: 5
+    ns_eps: 1.0e-7
+    adamw_lr: 0.0006
+    adamw_betas: [0.9, 0.95]
+    adamw_eps: 1.0e-8
+    adamw_weight_decay: 0.1
+    max_grad_norm: 1.0
+  # Bonus Hessian-approximation optimizer; defaults follow the authors' GPT-2 recipe.
+  sophia:
+    lr: 0.0003
+    betas: [0.965, 0.99]
+    rho: 0.04
+    weight_decay: 0.1
+    eps: 1.0e-15
+    hessian_interval: 10
+    max_grad_norm: 1.0
+
+# Bonus sweep (main.py --sweep): each trial trains budget_fraction of one pass with its
+# own full schedule, from the shared initial weights, and is scored on validation loss.
+# Only the learning rate (Muon: its matrix lr) is swept; everything else is fixed.
+# Finished trials in sweep/sweep.csv are reused when the sweep is rerun.
+sweep:
+  budget_fraction: 0.1
+  lr_multipliers: [0.25, 0.5, 1.0, 2.0, 4.0]
+  # If the best trial sits on a grid edge, extend the grid by x2 in that direction.
+  max_extensions: 3
+
+output:
+  directory: outputs/part2
+
+synthetic:
+  vocab_size: 32
+  train_blocks: 16
+  validation_blocks: 4
+  test_blocks: 4

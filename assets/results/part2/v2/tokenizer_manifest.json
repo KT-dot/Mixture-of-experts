@@ -1,0 +1,18 @@
+{
+  "configuration": {
+    "min_frequency": 2,
+    "special_tokens": [
+      "<pad>",
+      "<bos>",
+      "<eos>",
+      "<unk>"
+    ],
+    "type": "byte_level_bpe",
+    "vocab_size": 16000
+  },
+  "dataset": "browndw/human-ai-parallel-corpus",
+  "initial_alphabet": "byte_level_256",
+  "resolved_revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+  "selected_text_field": "text",
+  "training_split_fingerprint": "230eb7263ffdda24"
+}

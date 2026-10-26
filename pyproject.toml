@@ -1,0 +1,27 @@
+[project]
+name = "anlp-assignment-2"
+version = "0.1.0"
+description = "Advanced NLP Assignment 2: optimizer benchmark (Part 2) and decoding strategies (Part 3)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "datasets>=4.1,<5",
+  "matplotlib>=3.10,<4",
+  "numpy>=2.2,<3",
+  "pandas>=2.3,<3",
+  "pyyaml>=6.0,<7",
+  "sacrebleu>=2.5,<3",
+  "tokenizers>=0.22,<1",
+  "torch>=2.6,<2.7",
+  "transformers>=5.17,<6",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.4,<9", "ruff>=0.16,<0.17"]
+
+[tool.pytest.ini_options]
+testpaths = ["src/part2/tests", "src/part3/tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

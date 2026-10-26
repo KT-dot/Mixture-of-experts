@@ -1,0 +1,71 @@
+{
+  "fingerprint": "176691d0ea86e4ff",
+  "model": {
+    "name": "EleutherAI/pythia-160m",
+    "revision": "50f5173d932e8e61f858120bcb800b97af589f46",
+    "dtype": "float32",
+    "device": "cuda"
+  },
+  "dataset": {
+    "name": "hamishivi/ROCStories",
+    "revision": "cd2b3893a6ee30afada293d5a8f877c3023530e1",
+    "split": "test",
+    "prompt_field": "prompt",
+    "reference_field": "continuation",
+    "max_samples": null,
+    "min_samples": 1000
+  },
+  "stories_evaluated": 19611,
+  "excluded_empty_rows": [
+    353,
+    389,
+    1193,
+    2005,
+    2764,
+    3826,
+    4608,
+    6770,
+    11124,
+    12061,
+    14347,
+    14449,
+    14650,
+    14895,
+    15092,
+    15231,
+    16380,
+    17159,
+    17350,
+    17741,
+    18059,
+    18260
+  ],
+  "limit": null,
+  "generation": {
+    "max_new_tokens": 64,
+    "newline_policy": "ban",
+    "batch_size": 128,
+    "beam_batch_size": 32,
+    "scoring_batch_size": 64
+  },
+  "stop_token_ids": [
+    0
+  ],
+  "banned_token_count": 188,
+  "tokenizer_vocab_size": 50277,
+  "model_logit_width": 50304,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 2080 Ti",
+  "torch_version": "2.6.0+cu124",
+  "reference": {
+    "fingerprint": "176691d0ea86e4ff",
+    "stories": 19611,
+    "reference_perplexity": 24.707809473857317,
+    "reference_tokens_total": 827077,
+    "reference_tokens_mean": 42.174136963948804,
+    "reference_tokens_p95": 56.0,
+    "reference_tokens_p99": 61.0,
+    "reference_tokens_max": 79,
+    "fraction_references_longer_than_max_new_tokens": 0.0016827290806180205
+  }
+}
